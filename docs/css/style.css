@@ -288,8 +288,8 @@ li {
 
 .header-top__ul :nth-child(7) {
   border-right: 1px solid #40bf78;
-  width: 137px;
-  margin: 0 28px 0 0;
+  width: 163px;
+  margin: 0 22px 0 0;
 }
 
 .header-top__ul :nth-child(8) {
@@ -1424,6 +1424,10 @@ li {
     text-align: center;
   }
 
+  .header-top__ul :nth-child(7) {
+    width: 113px;
+  }
+
   .header-top__link {
     width: auto;
   }
@@ -1447,6 +1451,13 @@ li {
 
   .header-middle__logo-text {
     font-size: 26px;
+  }
+
+  .header-middle__select {
+    padding: 3px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .header-middle__select span {

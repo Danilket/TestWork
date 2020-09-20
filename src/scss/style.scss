@@ -351,8 +351,11 @@ li {
 		}
 		:nth-child(7) {
 			border-right: 1px solid #40bf78;
-			width: 137px;
-			margin: 0 28px 0 0;
+			@media (max-width: $md1+px) {
+				width: 113px;
+			}
+			width: 163px;
+			margin: 0 22px 0 0;
 		}
 		:nth-child(8) {
 			margin: 0 50px 0 0;
@@ -495,6 +498,10 @@ li {
 		border-radius: 6px 0 0 6px;
 		border: none;
 		margin: 0 1px 0 0;
+		@media (max-width: $md1+px) {
+			padding: 3px;
+			justify-content: center;
+		}
 		span {
 			font-size: 16px;
 			padding: 0 0 0 6px;
