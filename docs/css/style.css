@@ -300,6 +300,10 @@ li {
   margin: 0;
 }
 
+.header-top__li :hover {
+  border-bottom: 1px solid #fff;
+}
+
 .header-top__link {
   height: 20px;
   color: #fff;
@@ -309,6 +313,14 @@ li {
 
 .header-top__link_mail {
   margin: 0 40px 0 40px;
+}
+
+.header-top__link_mail:hover span {
+  border-bottom: 1px solid #fff;
+}
+
+.header-top__link_tel:hover span {
+  border-bottom: 1px solid #fff;
 }
 
 .header-top__link_tel_mobile {
@@ -353,6 +365,20 @@ li {
 
 .header-middle__logo {
   margin: 0 89px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-middle__img {
+  width: 40px;
+  height: 40px;
+}
+
+.header-middle__logo-text {
+  color: #171717;
+  font-size: 33px;
+  margin: 5px 0 0 6px;
 }
 
 .header-middle__form {
@@ -406,11 +432,17 @@ li {
       -ms-flex-align: center;
           align-items: center;
   font-family: MyriadPro-LightSemiExt;
+  max-width: 180px;
+  cursor: pointer;
 }
 
 .info_summ {
   width: 100%;
   max-width: 125px;
+}
+
+.info_summ:hover .info__p_summ {
+  border-bottom: 1px solid #000;
 }
 
 .info__img {
@@ -452,7 +484,7 @@ li {
           box-shadow: 0px 7px 16px -16px #000000;
 }
 
-.header-bottom {
+.header-bottom__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -472,6 +504,11 @@ li {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  cursor: pointer;
+}
+
+.header-bottom__item:hover span {
+  color: #bcbcbc;
 }
 
 .header-bottom__item.active {
@@ -487,6 +524,7 @@ li {
 .header-bottom__text {
   color: #343434;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .item--1 {
@@ -550,7 +588,7 @@ li {
   background-color: #fff;
 }
 
-.top-block-top__h2 {
+.top-block-top__title {
   color: #ffaf2d;
   font-size: 24px;
   padding: 30px 15px 0 27px;
@@ -632,7 +670,7 @@ li {
   line-height: 20px;
 }
 
-.top-block-middle__h2 {
+.top-block-middle__title {
   max-width: 426px;
   color: #f3f1f1;
   font-size: 40px;
@@ -656,6 +694,11 @@ li {
   background-color: #ffaf2d;
   color: #ffffff;
   font-size: 18px;
+}
+
+.top-block-middle__button:hover {
+  color: #ffaf2d;
+  background-color: #ffffff;
 }
 
 .top-block-middle__img-container {
@@ -709,6 +752,11 @@ li {
   font-size: 18px;
   color: #ffaf2d;
   font-family: "MyriadPro-LightSemiExt";
+  width: 180px;
+}
+
+.top-block-bottom__catalog:hover {
+  border-bottom: 1px solid #ffaf2d;
 }
 
 .bottom-block {
@@ -747,11 +795,12 @@ li {
 }
 
 .news-container {
+  display: block;
   max-width: 1412px;
   margin: 167px auto 0;
 }
 
-.news-container__h2 {
+.news-container__title {
   color: #121212;
   font-size: 40px;
   margin: 0 0 0 -2px;
@@ -797,6 +846,10 @@ li {
   margin: 0px 0 0 2px;
 }
 
+.main-item__link:hover {
+  border-bottom: 1px solid #00aa4b;
+}
+
 .main-item__link-news {
   display: inline-block;
   height: 35px;
@@ -809,6 +862,11 @@ li {
   font-family: "MyriadPro-LightSemiExt";
   margin: 52px 0 0 2px;
   text-align: center;
+}
+
+.main-item__link-news:hover {
+  color: #fff;
+  background-color: #000;
 }
 
 .main-item__data {
@@ -864,6 +922,10 @@ li {
   font-size: 16px;
 }
 
+.other-item__link:hover {
+  border-bottom: 1px solid #00aa4b;
+}
+
 .other-item__data {
   color: #777777;
   font-family: "MyriadPro-LightSemiExt";
@@ -900,6 +962,7 @@ li {
 
 .top-info--2__link {
   margin: 2px 0 0 0;
+  width: 35px;
 }
 
 .top-info--2__data {
@@ -923,11 +986,12 @@ li {
 }
 
 .recomend-container {
+  display: block;
   margin: 164px auto 0;
   max-width: 1391px;
 }
 
-.recomend-container__h2 {
+.recomend-container__title {
   color: #232323;
   font-size: 40px;
   text-align: center;
@@ -981,7 +1045,7 @@ li {
   letter-spacing: 0.3px;
 }
 
-.left-item__h2 {
+.left-item__title {
   font-size: 30px;
   text-align: center;
   margin: 7px 0 0 2px;
@@ -1054,7 +1118,7 @@ li {
   text-transform: uppercase;
 }
 
-.right-item-1__h2 {
+.right-item-1__title {
   color: #ffffff;
   font-size: 30px;
   margin: 5px 0 0 0;
@@ -1094,7 +1158,7 @@ li {
   text-transform: uppercase;
 }
 
-.right-item-2__h2 {
+.right-item-2__title {
   color: #121212;
   font-size: 30px;
   margin: 6px 0 0 0;
@@ -1142,7 +1206,12 @@ li {
   margin: 42px 0 0 0;
 }
 
-.item-top__h2 {
+.solutions__button:hover {
+  background-color: #a8a8a8;
+  color: #000;
+}
+
+.item-top__title {
   font-size: 40px;
   line-height: 48px;
 }
@@ -1155,7 +1224,7 @@ li {
   line-height: 21.5px;
 }
 
-.item-bottom__h2 {
+.item-bottom__title {
   font-family: "MyriadPro-LightSemiExt";
   font-size: 40px;
   margin: 32px 0 0 0;
@@ -1241,7 +1310,7 @@ li {
   padding: 90px 0 0 0;
 }
 
-.footer-top__h2 {
+.footer-top__title {
   color: #777777;
   font-family: "MyriadPro-LightSemiExt";
   font-size: 24px;
@@ -1252,6 +1321,14 @@ li {
   font-size: 16px;
   margin: 26px 0 0 0;
   line-height: 24px;
+}
+
+.footer-top__li {
+  cursor: pointer;
+}
+
+.footer-top__li:hover {
+  color: #a8a8a8;
 }
 
 .footer-container-bottom {
@@ -1365,10 +1442,11 @@ li {
 
   .header-middle__img {
     height: 30px;
+    width: 30px;
   }
 
-  .header-middle__form {
-    margin: 0 20px 0 0;
+  .header-middle__logo-text {
+    font-size: 26px;
   }
 
   .header-middle__select span {
@@ -1384,7 +1462,7 @@ li {
     height: 25px;
   }
 
-  .header-bottom {
+  .header-bottom__list {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1406,7 +1484,7 @@ li {
     padding: 55px 0 0 37px;
   }
 
-  .top-block-middle__h2 {
+  .top-block-middle__title {
     font-size: 23px;
     line-height: 23px;
     padding: 30px 0 0 0;
@@ -1537,7 +1615,7 @@ li {
     padding: 55px 0 0 17px;
   }
 
-  .top-block-middle__h2 {
+  .top-block-middle__title {
     font-size: 18px;
     line-height: 18px;
     padding: 30px 0 0 0;
@@ -1691,7 +1769,7 @@ li {
     margin: 0 0 0 0;
   }
 
-  .top-block-middle__h2 {
+  .top-block-middle__title {
     font-size: 34px;
     line-height: 34px;
     padding: 30px 0 0 0;
@@ -1785,12 +1863,12 @@ li {
     margin: 0 0 70px 0;
   }
 
-  .item-top__h2 {
+  .item-top__title {
     font-size: 30px;
     line-height: 30px;
   }
 
-  .item-bottom__h2 {
+  .item-bottom__title {
     display: none;
   }
 
@@ -1843,7 +1921,7 @@ li {
     padding: 25px 0 0 10px;
   }
 
-  .top-block-middle__h2 {
+  .top-block-middle__title {
     font-size: 18px;
     line-height: 18px;
     padding: 10px 0 0 0;

@@ -370,6 +370,11 @@ li {
 			}
 		}
 	}
+	&__li {
+		:hover {
+			border-bottom: 1px solid #fff;
+		}
+	}
 	&__link {
 		height: 20px;
 		color: #fff;
@@ -380,6 +385,11 @@ li {
 		}
 		&_mail {
 			margin: 0 40px 0 40px;
+			&:hover {
+				span {
+					border-bottom: 1px solid #fff;
+				}
+			}
 			@media (max-width: $md1+px) {
 				margin: 0 20px 0 0;
 			}
@@ -394,6 +404,11 @@ li {
 			}
 		}
 		&_tel {
+			&:hover {
+				span {
+					border-bottom: 1px solid #fff;
+				}
+			}
 			@media (max-width: $md1+px) {
 				span {
 					display: none;
@@ -444,22 +459,31 @@ li {
 	align-items: center;
 	&__logo {
 		margin: 0 89px 0 0;
+		display: flex;
 		@media (max-width: $md1+px) {
 			margin: 0 40px 0 0;
 		}
 	}
 	&__img {
+		width: 40px;
+		height: 40px;
 		@media (max-width: $md1+px) {
 			height: 30px;
+			width: 30px;
+		}
+	}
+	&__logo-text {
+		color: #171717;
+		font-size: 33px;
+		margin: 5px 0 0 6px;
+		@media (max-width: $md1+px) {
+			font-size: 26px;
 		}
 	}
 	&__form {
 		width: 885px;
 		display: flex;
 		margin: 0 49px 0 0;
-		@media (max-width: $md1+px) {
-			margin: 0 20px 0 0;
-		}
 	}
 	&__select {
 		display: flex;
@@ -502,9 +526,16 @@ li {
 	display: flex;
 	align-items: center;
 	font-family: MyriadPro-LightSemiExt;
+	max-width: 180px;
+	cursor: pointer;
 	&_summ {
 		width: 100%;
 		max-width: 125px;
+		&:hover {
+			.info__p_summ {
+				border-bottom: 1px solid #000;
+			}
+		}
 	}
 	&__img {
 		height: 35px;
@@ -551,10 +582,12 @@ li {
 	}
 }
 .header-bottom {
-	display: flex;
-	margin: -6px auto 0;
-	@media (max-width: $md1+px) {
-		justify-content: space-between;
+	&__list {
+		display: flex;
+		margin: -6px auto 0;
+		@media (max-width: $md1+px) {
+			justify-content: space-between;
+		}
 	}
 	&__mobile {
 		display: none;
@@ -568,6 +601,12 @@ li {
 		display: flex;
 		flex-direction: column;
 		text-align: center;
+		cursor: pointer;
+		&:hover {
+			span {
+				color: #bcbcbc;
+			}
+		}
 		@media (max-width: $md1+px) {
 			margin: 0;
 		}
@@ -591,6 +630,7 @@ li {
 	&__text {
 		color: #343434;
 		font-size: 16px;
+		cursor: pointer;
 		@media (max-width: $md1+px) {
 			font-size: 14px;
 		}
@@ -655,7 +695,7 @@ li {
 	@media (max-width: $md3+px) {
 		display: none;
 	}
-	&__h2 {
+	&__title {
 		color: #ffaf2d;
 		font-size: 24px;
 		padding: 30px 15px 0 27px;
@@ -736,7 +776,7 @@ li {
 		font-size: 16px;
 		line-height: 20px;
 	}
-	&__h2 {
+	&__title {
 		max-width: 426px;
 		color: #f3f1f1;
 		font-size: 40px;
@@ -788,6 +828,10 @@ li {
 		background-color: #ffaf2d;
 		color: #ffffff;
 		font-size: 18px;
+		&:hover {
+			color: #ffaf2d;
+			background-color: #ffffff;
+		}
 		@media (max-width: $md4+px) {
 			font-size: 14px;
 			width: 100px;
@@ -899,6 +943,10 @@ li {
 		font-size: 18px;
 		color: #ffaf2d;
 		font-family: "MyriadPro-LightSemiExt";
+		width: 180px;
+		&:hover {
+			border-bottom: 1px solid #ffaf2d;
+		}
 		@media (max-width: 1200px) {
 			font-size: 14px;
 		}
@@ -955,12 +1003,13 @@ li {
 }
 
 .news-container {
+	display: block;
 	max-width: 1412px;
 	margin: 167px auto 0;
 	@media (max-width: $md3+px) {
 		display: none;
 	}
-	&__h2 {
+	&__title {
 		color: #121212;
 		font-size: 40px;
 		margin: 0 0 0 -2px;
@@ -1003,6 +1052,9 @@ li {
 		font-family: "MyriadPro-LightSemiExt";
 		font-size: 16px;
 		margin: 0px 0 0 2px;
+		&:hover {
+			border-bottom: 1px solid #00aa4b;
+		}
 		&-news {
 			display: inline-block;
 			height: 35px;
@@ -1015,6 +1067,10 @@ li {
 			font-family: "MyriadPro-LightSemiExt";
 			margin: 52px 0 0 2px;
 			text-align: center;
+			&:hover {
+				color: #fff;
+				background-color: #000;
+			}
 		}
 	}
 	&__data {
@@ -1039,6 +1095,7 @@ li {
 .other-item {
 	margin: 0 0 43px 0;
 	display: flex;
+
 	&__img {
 		width: 190px;
 		height: 168px;
@@ -1055,6 +1112,9 @@ li {
 		color: #00aa4b;
 		font-family: "MyriadPro-LightSemiExt";
 		font-size: 16px;
+		&:hover {
+			border-bottom: 1px solid #00aa4b;
+		}
 	}
 	&__data {
 		color: #777777;
@@ -1088,6 +1148,7 @@ li {
 	justify-content: start;
 	&__link {
 		margin: 2px 0 0 0;
+		width: 35px;
 	}
 	&__data {
 		margin: 4px 0 0 0;
@@ -1109,9 +1170,10 @@ li {
 }
 
 .recomend-container {
+	display: block;
 	margin: 164px auto 0;
 	max-width: 1391px;
-	&__h2 {
+	&__title {
 		color: #232323;
 		font-size: 40px;
 		text-align: center;
@@ -1167,7 +1229,7 @@ li {
 		text-align: center;
 		letter-spacing: 0.3px;
 	}
-	&__h2 {
+	&__title {
 		font-size: 30px;
 		text-align: center;
 		margin: 7px 0 0 2px;
@@ -1228,7 +1290,7 @@ li {
 		font-size: 20px;
 		text-transform: uppercase;
 	}
-	&__h2 {
+	&__title {
 		color: #ffffff;
 		font-size: 30px;
 		margin: 5px 0 0 0;
@@ -1266,7 +1328,7 @@ li {
 		font-size: 20px;
 		text-transform: uppercase;
 	}
-	&__h2 {
+	&__title {
 		color: #121212;
 		font-size: 30px;
 		margin: 6px 0 0 0;
@@ -1312,6 +1374,10 @@ li {
 		font-family: "MyriadPro-LightSemiExt";
 		font-size: 24px;
 		margin: 42px 0 0 0;
+		&:hover {
+			background-color: #a8a8a8;
+			color: #000;
+		}
 	}
 	&__container-right {
 		@media (max-width: $md3+px) {
@@ -1322,7 +1388,7 @@ li {
 	}
 }
 .item-top {
-	&__h2 {
+	&__title {
 		font-size: 40px;
 		line-height: 48px;
 		@media (max-width: $md3+px) {
@@ -1339,7 +1405,7 @@ li {
 	}
 }
 .item-bottom {
-	&__h2 {
+	&__title {
 		font-family: "MyriadPro-LightSemiExt";
 		font-size: 40px;
 		margin: 32px 0 0 0;
@@ -1430,7 +1496,7 @@ li {
 			border-bottom: 1px solid #4a4a4a;
 		}
 	}
-	&__h2 {
+	&__title {
 		color: #777777;
 		font-family: "MyriadPro-LightSemiExt";
 		font-size: 24px;
@@ -1442,6 +1508,10 @@ li {
 		line-height: 24px;
 	}
 	&__li {
+		cursor: pointer;
+		&:hover {
+			color: #a8a8a8;
+		}
 		@media (max-width: $md3+px) {
 			display: none;
 		}
