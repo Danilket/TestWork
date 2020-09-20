@@ -403,6 +403,10 @@ li {
   border-radius: 6px 0 0 6px;
   border: none;
   margin: 0 1px 0 0;
+  padding: 3px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header-middle__select span {
@@ -1451,13 +1455,6 @@ li {
 
   .header-middle__logo-text {
     font-size: 26px;
-  }
-
-  .header-middle__select {
-    padding: 3px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 
   .header-middle__select span {
