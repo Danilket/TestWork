@@ -697,6 +697,7 @@ li {
 	width: 100%;
 	height: 476px;
 	background-color: #fff;
+	flex: 1 1 25%;
 	@media (max-width: $md3+px) {
 		display: none;
 	}
@@ -752,28 +753,34 @@ li {
 	background-color: #232323;
 	display: flex;
 	margin: 0 0 0 21px;
-	@media (max-width: $md2+px) {
-		max-width: 360px;
-	}
+	flex: 1 1 50%;
+	// @media (max-width: $md2+px) {
+	// 	max-width: 360px;
+	// }
 	@media (max-width: $md3+px) {
 		width: 100%;
 		max-width: 767px;
 		margin: 0 0 0 0;
+		flex: 1 1 100%;
 	}
 	@media (max-width: $md4+px) {
 		height: 250px;
 	}
 	&-text {
-		padding: 55px 0 0 67px;
-		@media (max-width: $md1+px) {
-			padding: 55px 0 0 37px;
-		}
-		@media (max-width: $md2+px) {
-			padding: 55px 0 0 17px;
-		}
-		@media (max-width: $md4+px) {
-			padding: 25px 0 0 10px;
-		}
+		// padding: 55px 0 0 67px;
+		// padding: 55px 37px;
+		// padding: 55px 10%;
+		padding: 55px 2% 55px 5%;
+		width: 100%;
+		// @media (max-width: $md1+px) {
+		// 	padding: 55px 0 0 37px;
+		// }
+		// @media (max-width: $md2+px) {
+		// 	padding: 55px 0 0 17px;
+		// }
+		// @media (max-width: $md4+px) {
+		// 	padding: 25px 0 0 10px;
+		// }
 	}
 	&__portfolio {
 		color: #777777;
@@ -841,37 +848,46 @@ li {
 			font-size: 14px;
 			width: 100px;
 			height: 25px;
+			margin: 26px 0 0 0;
 		}
 	}
 	&__img-container {
-		text-align: end;
+		// text-align: end;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		width: 100%;
-		max-width: 408px;
-		@media (max-width: $md1+px) {
-			width: 49%;
-		}
-		@media (max-width: $md2+px) {
-			width: 53%;
-			max-width: 250px;
-		}
+		// max-width: 408px;
+		// padding: 55px 37px;
+		// padding: 55px 10%;
+		padding: 55px 5% 55px 2%;
+		// @media (max-width: $md1+px) {
+		// 	width: 49%;
+		// }
+		// @media (max-width: $md2+px) {
+		// 	width: 53%;
+		// 	max-width: 250px;
+		// }
 		@media (max-width: $md4+px) {
-			width: 30%;
-			max-width: 150px;
+			max-width: 100%;
+			width: auto;
 		}
 	}
 	&__img {
-		padding: 70px 82px 0 0;
-		@media (max-width: $md2+px) {
-			height: 80%;
-			padding: 120px 82px 0 0;
-		}
-		@media (max-width: $md2+px) {
-			padding: 165px 82px 0 0;
-		}
-		@media (max-width: $md4+px) {
-			height: 60%;
-			padding: 60px 32px 0 0;
-		}
+		// padding: 70px 82px 0 0;
+		display: block;
+		max-width: 100%;
+		// @media (max-width: $md2+px) {
+		// 	height: 80%;
+		// 	padding: 120px 82px 0 0;
+		// }
+		// @media (max-width: $md2+px) {
+		// 	padding: 165px 82px 0 0;
+		// }
+		// @media (max-width: $md4+px) {
+		// 	height: 60%;
+		// 	padding: 60px 32px 0 0;
+		// }
 	}
 }
 
@@ -884,14 +900,16 @@ li {
 	background-color: #ffffff;
 	margin: 0 0 0 19px;
 	display: flex;
+	flex: 1 1 25%;
 	@media (max-width: $md3+px) {
 		margin: 30px 0 0 0;
 		max-width: 100%;
 		height: 476px;
+		flex: 1 1 100%;
 	}
-	@media (max-width: $md4+px) {
-		height: 350px;
-	}
+	// @media (max-width: $md4+px) {
+	// 	height: 350px;
+	// }
 	&__container {
 		display: flex;
 		flex-direction: column;
@@ -1219,12 +1237,28 @@ li {
 	padding: 67px 0 0 0;
 	max-width: 314px;
 	margin: 0 auto;
+	@media (max-width: $md3+px) {
+		padding: 0;
+		align-self: center;
+		display: flex;
+		flex-direction: column;
+	}
+	@media (max-width: $md4+px) {
+		padding: 0 2%;
+		width: 100%;
+	}
 }
 .left-item {
 	@media (max-width: $md3+px) {
 		max-width: 100%;
 		display: flex;
 		height: 483px;
+	}
+	@media (max-width: 536px) {
+		height: 400px;
+	}
+	@media (max-width: $md4+px) {
+		height: 300px;
 	}
 	&__name {
 		display: block;
@@ -1233,12 +1267,19 @@ li {
 		text-transform: uppercase;
 		text-align: center;
 		letter-spacing: 0.3px;
+		@media (max-width: $md4+px) {
+			font-size: 16px;
+		}
 	}
 	&__title {
 		font-size: 30px;
 		text-align: center;
 		margin: 7px 0 0 2px;
 		letter-spacing: 0.4px;
+		@media (max-width: $md4+px) {
+			font-size: 20px;
+			line-height: 20px;
+		}
 	}
 	&__description {
 		display: block;
@@ -1249,18 +1290,38 @@ li {
 		margin: 24px 0 0 0;
 		letter-spacing: 0.2px;
 		line-height: 19.5px;
+		@media (max-width: $md4+px) {
+			font-size: 12px;
+			line-height: 14px;
+		}
 	}
 	&__img {
-		max-width: 100%;
+		// max-width: 100%;
+		display: block;
+		padding: 0 5%;
+		width: 100%;
+		@media (max-width: $md3+px) {
+			display: none;
+		}
+		&--2 {
+			display: none;
+			@media (max-width: $md3+px) {
+				display: block;
+				width: 100%;
+			}
+		}
 		&-container {
 			max-width: 431px;
-			width: 100%;
+			// width: 100%;
 			margin: 0 auto;
 			max-height: 100%;
 			height: 519px;
 			display: flex;
 			justify-content: center;
 			align-items: flex-end;
+			@media (max-width: $md3+px) {
+				justify-content: flex-end;
+			}
 		}
 	}
 }
@@ -1280,13 +1341,24 @@ li {
 	height: 419px;
 	background-color: #232323;
 	padding: 17px 0 0 0;
+	@media (max-width: $md4+px) {
+		height: 250px;
+	}
 	&__img {
 		width: 100%;
+		padding: 0 24% 0 0;
+		&-container {
+			align-items: center;
+			display: flex;
+		}
 	}
 	&__text {
-		margin: 102px 0 0 59px;
-		@media (max-width: 1200px) {
-			margin: 52px 0 0 29px;
+		margin: 102px 0 0 0px;
+		// @media (max-width: 1200px) {
+		// 	margin: 52px 0 0 29px;
+		// }
+		@media (max-width: $md4+px) {
+			margin: 35px 0 0 0;
 		}
 	}
 	&__name {
@@ -1294,6 +1366,9 @@ li {
 		font-family: "MyriadPro-LightSemiExt";
 		font-size: 20px;
 		text-transform: uppercase;
+		@media (max-width: $md4+px) {
+			font-size: 16px;
+		}
 	}
 	&__title {
 		color: #ffffff;
@@ -1302,6 +1377,10 @@ li {
 		max-width: 300px;
 		line-height: 35.5px;
 		letter-spacing: 0.3px;
+		@media (max-width: $md4+px) {
+			font-size: 20px;
+			line-height: 20px;
+		}
 	}
 	&__description {
 		display: block;
@@ -1313,6 +1392,10 @@ li {
 		margin: 23px 0 0 0;
 		letter-spacing: 0.2px;
 		line-height: 18.9px;
+		@media (max-width: $md4+px) {
+			font-size: 12px;
+			line-height: 14px;
+		}
 	}
 }
 .right-item-2 {
@@ -1320,11 +1403,18 @@ li {
 	height: 316px;
 	margin: 10px 0 0 10px;
 	background-color: #ffffff;
+	@media (max-width: $md4+px) {
+		height: 220px;
+	}
 	&__text {
 		padding: 94px 0 0 63px;
 		letter-spacing: 0.3px;
+		width: 100%;
 		@media (max-width: 1200px) {
 			padding: 30px 0 0 30px;
+		}
+		@media (max-width: $md4+px) {
+			padding: 30px 0 0 10px;
 		}
 	}
 	&__name {
@@ -1332,12 +1422,19 @@ li {
 		font-family: "MyriadPro-LightSemiExt";
 		font-size: 20px;
 		text-transform: uppercase;
+		@media (max-width: $md4+px) {
+			font-size: 14px;
+		}
 	}
 	&__title {
 		color: #121212;
 		font-size: 30px;
 		margin: 6px 0 0 0;
 		letter-spacing: 0.35px;
+		@media (max-width: $md4+px) {
+			font-size: 20px;
+			line-height: 20px;
+		}
 	}
 	&__description {
 		display: block;
@@ -1349,10 +1446,37 @@ li {
 		line-height: 19.5px;
 		max-width: 400px;
 		width: 100%;
+		@media (max-width: $md4+px) {
+			font-size: 12px;
+			line-height: 14px;
+		}
 	}
 	&__img {
-		padding: 8px 0 0 30px;
+		// padding: 8px 0 0 30px;
 		width: 100%;
+		@media (max-width: 1200px) {
+			display: none;
+		}
+		&--2 {
+			display: none;
+			@media (max-width: 1200px) {
+				display: block;
+				width: 100%;
+			}
+		}
+		&-container {
+			width: 68%;
+			display: flex;
+			justify-content: flex-end;
+			align-items: flex-end;
+			@media (max-width: 1200px) {
+				width: 53%;
+				align-items: center;
+			}
+			@media (max-width: $md3+px) {
+				width: 40%;
+			}
+		}
 	}
 }
 
