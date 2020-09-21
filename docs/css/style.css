@@ -1059,6 +1059,10 @@ li {
   margin: 0 auto;
 }
 
+.left-item {
+  margin: 0 0 10px 0;
+}
+
 .left-item__name {
   display: block;
   font-family: "MyriadPro-LightSemiExt";
@@ -2025,20 +2029,29 @@ li {
     width: auto;
   }
 
+  .top-block-bottom {
+    height: 270px;
+  }
+
   .top-block-bottom__container {
     padding: 53px 0 0 19px;
   }
 
+  .top-block-bottom__img {
+    width: auto;
+    height: auto;
+  }
+
   .top-block-bottom__price {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .top-block-bottom__sale {
-    font-size: 40px;
+    font-size: 18px;
   }
 
   .top-block-bottom__catalog {
-    font-size: 20px;
+    font-size: 12px;
   }
 
   .recomend-left-text {
